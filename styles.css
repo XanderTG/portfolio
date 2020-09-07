@@ -1,0 +1,47 @@
+h2 {
+  margin-left: 15em;
+}
+
+.entry {
+  color: #333333;
+  font-family: sans-serif;
+  margin-right: 40em;
+  margin-left: 25em;
+}
+
+p.entry {
+  margin-left: 27em;
+}
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 9%;
+}
+
+.navli {
+  display: inline;
+  float: left;
+  border: solid #cccccc 1px;
+}
+
+.navlink {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+  text-decoration: none;
+  color: #00174a;
+  font-family: sans-serif;
+}
+
+.navlink:hover {
+  color: white;
+}
+
+#name {
+  padding-top: 15px;
+  color: #00174a;
+  text-align: center;
+  background-color: #e1e9eb;
+  font-family: fantasy;
+}
