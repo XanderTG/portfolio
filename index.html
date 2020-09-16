@@ -3,48 +3,56 @@
   <head>
     <meta charset="utf-8">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-
-    <ul class="nav">
-      <li class="navli"><a class="navlink" href="#">Home</a></li>
-      <li class="navli"><a class="navlink" href="#">News</a></li>
-      <li class="navli"><a class="navlink" href="#">Project</a></li>
-      <li class="navli"><a class="navlink" href="#">About</a></li>
-    </ul>
-
-    <div id="name">
-      <h1>Alexander Steimle</h1>
-    </div>
-
-    <hr>
-
-    <h2>About</h2>
-      <p class="entry">I am a student of computer science at Brigham Young University. Currently I'm in my junior year. I've most
-      recently completed course work in android development and algorithms, and now I'm learning system programming
-      and sharpening my web development skills. In my free time, I enjoy composing, reading, hiking, and spending time with
-      my family.</p>
-
-    <h2>Projects</h2>
-      <ul class="entry">
-        <li><em>Family Map</em> - and android application in java</li>
-        <li><em>Traveling Salesperson</em> - a solution to the TSP problem using a branch and bound alogirthm in python</li>
-        <li><em>Datalog Parser</em> - a parser for the datalog language using C++</li>
-      </ul>
-
-    <h2>Experience</h2>
-      <ul class="entry">
-          <li>Private Instructor at Juni Learning</li>
-          <li>Teaching Assistant at BYU for an introductory programming class</li>
-          <li>Student Manager at the MTC branch of the BYU Bookstore</li>
-      </ul>
-
-    <h2>Contact</h2>
-      <div class="entry">
-        <a href="https://github.com/XanderTG">github</a>
-        <a href="https://www.linkedin.com/in/alexander-steimle-566072193/">linkedin</a>
+    <div class="page">
+      <div class=" info_item navbar">
+        <ul class="nav">
+          <li class="navli"><a class="navlink" href="#">Home</a></li>
+          <li class="navli"><a class="navlink" href="#">News</a></li>
+          <li class="navli"><a class="navlink" href="#">Projects</a></li>
+          <li class="navli"><a class="navlink" href="#">About</a></li>
+        </ul>
       </div>
 
+      <div class="info_item" id="name">
+        <h1>Alexander Steimle</h1>
+      </div>
+
+      <div class="info_item about">
+        <h2>About</h2>
+          <p class="entry">I am a student of computer science at Brigham Young University. Currently I'm in my junior year. I've most
+          recently completed course work in android development and algorithms, and now I'm learning system programming
+          and sharpening my web development skills. When I'm not coding, I enjoy reading, hiking, composing, and spending time with
+          the people I love.</p>
+        </div>
+
+      <div class="info_item projects">
+        <h2>Projects</h2>
+          <ul class="entry">
+            <li class="proj"><em>Family Map</em> - and android application in java</li>
+            <li class="proj"><em>Traveling Salesperson</em> - a solution to the TSP problem using a branch and bound alogirthm in python</li>
+            <li class="proj"><em>Datalog Parser</em> - a parser for the datalog language using C++</li>
+          </ul>
+        </div>
+
+      <div class="info_item experience">
+        <h2>Experience</h2>
+          <ul class="entry">
+              <li>Private Instructor at Juni Learning</li>
+              <li>Teaching Assistant at BYU for an introductory programming class</li>
+              <li>Student Manager at the MTC branch of the BYU Bookstore</li>
+          </ul>
+      </div>
+
+      <div class="info_item contact">
+        <h2>Contact</h2>
+          <div class="entry">
+            <a class="clink" href="https://github.com/XanderTG">github</a>
+            <a class="clink" href="https://www.linkedin.com/in/alexander-steimle-566072193/">linkedin</a>
+          </div>
+        </div>
+      </div>
   </body>
 </html>
