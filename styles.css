@@ -1,95 +1,67 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Navbar */
+.navbar {
+  font-family: 'Raleway', sans-serif;
+  z-index: 1;
+}
+.navbar-collapse {
+  float: right;
 }
 
-
-.entry {
-  color: #333333;
-  font-family: sans-serif;
-  /* margin-right: 40em;
-  margin-left: 25em; */
+.nav-item {
+  padding: 15px;
 }
 
-.navli {
-  display: inline;
-  float: left;
-  border: solid #cccccc 1px;
-}
+/* backdrops */
 
-.navlink {
-  display: block;
-  padding: 8px;
-  background-color: #dddddd;
-  text-decoration: none;
-  color: #00174a;
-  font-family: sans-serif;
-}
-
-.navlink:hover {
-  color: white;
-}
-
-#name {
-  color: #00174a;
-  text-align: center;
-  background-color: #e1e9eb;
-  font-family: fantasy;
-}
-
-.page {
+.backdrop {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: #89bff0;
-  padding: 2em;
-}
-
-.info_item {
-  display: flex;
-  flex-wrap: wrap;
-  /* border: 1px solid red; */
-  width: 100%;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  padding: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.introblock {
+  height: 60%;
+  width: 50%;
   background-color: white;
-  margin-bottom: 10px;
-  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 10px black;
+  z-index: 0;
 }
 
-.info_item.navbar {
-  margin-top: -2em;
-  padding: 1em;
-  background-color: #89bff0;
-}
-
-.info_item.contact {
+.lower-right-div {
   display: flex;
-  flex-direction: column;
+  height: 400px;
+  width: 600px;
+  background-color: rgba(65, 171, 230, 0.5);
+  margin-top: 20%;
 }
 
-.clink {
-  margin: 0 1em;
+.upper-left-div {
+  display: flex;
+  height: 400px;
+  width: 600px;
+  background-color: rgba(230, 80, 91, 0.5);
+  margin-bottom: 20%;
 }
 
-.proj {
-  width: inherit;
+@media only screen and (min-width: 801px)) {
+
 }
 
-@media only screen and (max-width: 400px) {
-  .projects, .experience {
-    width: 100%;
-  }
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+
 }
 
-@media only screen and (min-width: 961px) {
-  .page {
-    width: 960px;
-    margin: 0 auto;
-  }
-  .projects, .experience {
-    width: 48.5%;
+@media only screen and (max-width: 576px) {
+  .backdrop {
+      flex-wrap: wrap;
   }
 }
