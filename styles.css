@@ -90,6 +90,36 @@ body {
   color: rgb(25, 25, 25);
 }
 
+
+
+/***********************************************************************************************************/
+/***********************************************************************************************************/
+/***********************************************************************************************************/
+
+.col {
+  /* background-color: orange;
+  border: 2px solid black; */
+  height: auto;
+  /* margin: 10px; */
+}
+
+.website {
+  border: 1px solid #aaaaaa;
+  height: 230px;
+  padding: 20px;
+  border-radius: 10px;
+  /* margin-top: 20px; */
+  /* flex: 0 1 calc(33% - 2em); */
+}
+
+.website h5 {
+  padding-bottom: 10px;
+}
+
+.website:last-child {
+  margin-bottom: 20px;
+}
+
 .whiteblock {
   position: absolute;
   top: 50%;
@@ -99,7 +129,18 @@ body {
   width: 75%;
   background-color: white;
   box-shadow: 0px 0px 10px black;
-  display: flex;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; */
+}
+
+.whiteblock img {
+  width: 200px;
+  border-radius: 10px;
 }
 
 #prof_img {
@@ -107,16 +148,22 @@ body {
   border-radius: 50%;
 }
 
-@media only screen and (min-width: 801px)) {
+@media only screen and (min-width: 801px) {
 
 }
 
-@media only screen and (min-width: 577px) and (max-width: 768px) {
+/* @media only screen and (min-width: 801px) and (max-width: 1193px) */
 
+@media only screen and (min-width: 577px) and (max-width: 800px) {
+  .website {
+  }
 }
 
 @media only screen and (max-width: 576px) {
   .backdrop {
       flex-wrap: wrap;
+  }
+  .website {
+    /* flex: 0 1 calc(33% - 2em); */
   }
 }
