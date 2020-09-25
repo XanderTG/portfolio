@@ -1,14 +1,15 @@
-/* Navbar */
-
 body {
   background-color: rgba(217, 214, 115, 0.2);
   z-index: -2;
 }
 
+/* Navbar */
+
 .navbar {
   font-family: 'Raleway', sans-serif;
   z-index: 1;
 }
+
 .navbar-collapse {
   float: right;
 }
@@ -103,21 +104,21 @@ body {
   /* margin: 10px; */
 }
 
+.introblock h1 {
+  font-size: 2.8rem;
+}
+
 .website {
   border: 1px solid #aaaaaa;
   height: 230px;
   padding: 20px;
   border-radius: 10px;
-  /* margin-top: 20px; */
-  /* flex: 0 1 calc(33% - 2em); */
+  margin-bottom: 20px;
 }
 
 .website h5 {
+  font-size: 1.3rem;
   padding-bottom: 10px;
-}
-
-.website:last-child {
-  margin-bottom: 20px;
 }
 
 .whiteblock {
@@ -133,9 +134,7 @@ body {
   overflow-y: auto;
   font-family: 'Raleway', sans-serif;
   text-align: center;
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; */
+  padding-top: 40px;
 }
 
 .whiteblock img {
@@ -152,18 +151,23 @@ body {
 
 }
 
-/* @media only screen and (min-width: 801px) and (max-width: 1193px) */
+@media only screen and (max-width: 991px) {
+  .navbar-light {
+    /* background-color: rgba(40, 40, 40, 0.7); */
+  }
+}
 
-@media only screen and (min-width: 577px) and (max-width: 800px) {
-  .website {
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .introblock h1 {
+    font-size: 2rem;
   }
 }
 
 @media only screen and (max-width: 576px) {
-  .backdrop {
-      flex-wrap: wrap;
+  .introblock h1 {
+    font-size: 1.7rem;
   }
-  .website {
-    /* flex: 0 1 calc(33% - 2em); */
+  .website h5 {
+    font-size: 1rem;
   }
 }
