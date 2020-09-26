@@ -79,6 +79,18 @@ body {
 /***********************************************************************************************************/
 
 
+.icons {
+  height: inherit;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.icons i {
+  padding: 20px;
+}
 
 .introblock {
   display: flex;
@@ -154,7 +166,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 75%;
+  height: 77%;
   width: 75%;
   background-color: white;
   box-shadow: 0px 0px 10px black;
@@ -168,6 +180,10 @@ body {
 .whiteblock img {
   width: 200px;
   border-radius: 10px;
+}
+
+#about-description {
+  padding-top: 35px;
 }
 
 #prof_img {
@@ -197,5 +213,11 @@ body {
   }
   .website h5 {
     font-size: 1rem;
+  }
+  .icons {
+    font-size: 15px;
+  }
+  .icons i {
+    padding: 10px;
   }
 }
